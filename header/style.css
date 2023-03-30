@@ -1,0 +1,186 @@
+:root {
+    --main-color: #212529;
+    --text-color: #969798;
+    --hover-color: white;
+    --dbg-color: #1C6DD0;
+  }
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    height: 50px;
+    padding: 0%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.navbar-collapse{
+    display: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0%;
+    margin-right: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.navbar-collapse :active{
+    border: 2px solid var(--text-color);
+}
+
+
+.collapse-icon{
+    padding: 0px 5px;
+    width: 30px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+}
+
+
+.mainlogo{
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    filter: opacity(0.2);
+}
+
+
+.navbar-nav{
+    display: inline;
+    padding-left: 100px;
+}
+
+.nav-item{
+    padding: 10px;
+    padding-left: 20px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-item :hover{
+    color: var(--hover-color);
+}
+
+
+.dropdown{
+    margin: 0%;
+    list-style: none;
+    z-index: 40;
+    display: none;
+    color: #212529;
+    width: 250px;
+    position: sticky;
+    left: 400px;
+    background-color: rgb(195, 196, 196);
+    border: var(--main-color) solid 2px;
+    border-radius: 0px 0px 10px 10px ;
+    padding-left: 10px;
+}
+
+
+
+.dropdown-item{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.dropdown :hover{
+    background-color: var(--dbg-color);
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+.nav-item a :hover{
+    color: var(--hover-color);  
+}
+
+/* -------------------sign in button  start------------------- */
+ 
+.myButton {
+	background-color: var(--text-color);
+    color: var(--main-color);
+	border-radius:28px;
+	border:1px solid #ffffff;
+    z-index: 40;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.button-heading-pos{
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    margin: 0px;
+}
+
+.myButton:hover {
+	background-color: rgb(67, 67, 67);
+    color: var(--text-color);
+}
+.myButton:active {
+	margin-top: 1px;
+}
+
+
+
+
+/* -------------------sign in button  end------------------- */
+
+
+
+
+
+@media screen and (max-width : 800px) {
+    .mainlogo{
+        display: block;
+        position: sticky;
+        height: 50px;
+    }
+
+    .button-collapse{
+        position: absolute;
+        /* top: 9px; */
+        right: 70px;
+    }
+
+    .navbar-collapse{
+        display: inline-block;
+        background-color: var(--main-color);
+    }
+    .navbar-nav{
+        padding : 0px;
+        display: none;
+    }
+
+    .dropdown{
+        left: 0%;
+    }
+
+    .nav-item{
+        display: block;
+        background-color: var(--main-color);
+    }
+}
+
+.navbar-nav-show{
+    display: block;
+}
